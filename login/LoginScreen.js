@@ -33,7 +33,7 @@ export default function Login({ navigation }) {
         <SafeAreaView style={styles.container}>
           <ScrollView contentContainerStyle={styles.scrollContainer}>
             <View style={styles.content}>
-              <Text style={styles.Text}>Surfing∙Ski Platform</Text>
+              <Text style={styles.Text}>Surfing Platform</Text>
               <Text style={styles.title}>TURFSKY</Text>
 
               {/* 입력창 그룹 */}
@@ -70,10 +70,6 @@ export default function Login({ navigation }) {
               <Text style={styles.link} onPress={() => navigation.navigate('SignUp')}>
                 계정이 없으신가요? 회원 가입하기
               </Text>
-              <Text style={styles.link} onPress={() => navigation.navigate('Shop')}>
-                asdfasdf
-              </Text>
-
             </View>
           </ScrollView>
         </SafeAreaView>
@@ -97,6 +93,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   title: {
+    marginBottom:20,
     fontSize: 44,
     color: 'white',
     textShadowColor: '#F2F2F2',
@@ -106,9 +103,8 @@ const styles = StyleSheet.create({
   },
   Text: {
     fontSize: 20,
+    marginBottom: 20,
     color: 'white',
-    marginTop: 10,
-    marginBottom: 30,
   },
   inputBox: {
     width: 300,
