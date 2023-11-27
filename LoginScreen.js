@@ -73,12 +73,6 @@ export default function Login({ navigation }) {
               <Text style={styles.link} onPress={() => navigation.navigate('SignUp')}>
                 계정이 없으신가요? 회원 가입하기
               </Text>
-              <Text style={styles.link} onPress={() => navigation.navigate('Shop')}>
-                shop
-              </Text>
-              <Text style={styles.link} onPress={() => navigation.navigate('Wishlist')}>
-                best
-              </Text>
             </View>
           </ScrollView>
         </SafeAreaView>
